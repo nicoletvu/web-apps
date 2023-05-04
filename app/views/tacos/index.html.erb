@@ -1,8 +1,15 @@
 <h1>Kona the Mini Goldendoodle</h1>
+
 <p> He's demanding pats</p>
+
 <p></p>
-<h2> Tricks that Kona knows:</h2>
-<li>Sit</li>
-<li>Down</li>
-<li>Stay</li>
-<li>Touch</li>
+<!-- Sandwich all Ruby code with <% %> -->
+<% tricks = ["Sit","Down","Stay","Touch"]%>
+
+<!-- puts equivalent is equal sign right next to % -->
+<h2> Kona knows <%= tricks.count%> tricks:</h2>
+<ul>
+  <% for trick in tricks%>
+    <li><%= trick %></li>
+  <% end %>
+</ul>
